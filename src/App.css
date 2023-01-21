@@ -4,8 +4,6 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  border: 10px double;
-  background-image: url(./go_board_lined.jpeg);
   background-size: cover;
   width: auto;
   margin: 0 auto;
@@ -38,3 +36,10 @@
   background-size: cover;
 }
 
+.empty {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  background-image: url(./thin_plus.png);
+  background-size: cover;
+}

@@ -50,13 +50,13 @@ class Piece extends Component {
     } else if (this.state.color === -1){
       return <div className="piece2"></div>;
     } else {
-      return null;
+      return <div className="empty"></div>;
     }
   }
 
   render() {
     return (
-      <div className="box" onClick={this.onClick}>
+      <div className="box" onClick={this.onClick} style={{}}>
         {this.getInterior()}
       </div>
     );
@@ -165,8 +165,11 @@ function App() {
   return (
     <div className="App">
       <Board depth={depth}/>
-      <div style={{padding: '30px'}}>
-        <div style={{marginBottom: '5px'}}>Number of ResNet evaluations</div>
+      <div style={{padding: '30px', alignContent: 'center', justifyContent: 'center' , display: 'flex'}}>
+        <div style={{display: 'flex', flexDirection: 'column', marginRight: '10px'}}>
+          <div style={{flex: 1}}/>
+          <div># ResNet evaluations</div>
+        </div>
         <input type="number" value={depth} onChange={(e) => setDepth(e.target.value)} />
       </div>
     </div>
