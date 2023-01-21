@@ -106,7 +106,7 @@ class Board extends Component {
     // open the request with the verb and the url
     const moves_as_string = this.moves.join(',');
     //xhr.open('GET', `http://127.0.0.1:1234/moves/${moves_as_string}`);
-    const url = `https://vgomgu3y7ez6yv2eyt2x3idfmu0ptzmc.lambda-url.us-east-1.on.aws?moves=${moves_as_string}&depth=${this.props.depth}`
+    const url = `https://vgomgu3y7ez6yv2eyt2x3idfmu0ptzmc.lambda-url.us-east-1.on.aws?moves=${moves_as_string}&depth=${Math.max(2, this.props.depth)}`
     xhr.open('GET', url);
     // send the request
     xhr.send();
