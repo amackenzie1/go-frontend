@@ -8,6 +8,11 @@ body {
 }
 
 code {
+  color: purple;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+code:hover {
+  color:darkgreen;
 }
