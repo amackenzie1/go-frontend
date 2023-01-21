@@ -124,7 +124,7 @@ class Board extends Component {
     recent_onedeaths = result[1];
     temp = result[0];
 
-    if (JSON.stringify(temp) === hash && player === -1){
+    if (JSON.stringify(temp) === hash && !player){
       alert("Pass")
     }
 
