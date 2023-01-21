@@ -115,7 +115,7 @@ class Board extends Component {
 
   update(coords, value, player){
     var temp = this.state.board;
-    if (coords.x*9 + coords.y < 81){
+    if (coords.x*9 + coords.y < 81 && temp[coords.x][coords.y] === 0){
       temp[coords.x][coords.y] = value;
     } else {
       alert("Pass!");
