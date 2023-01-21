@@ -101,14 +101,13 @@ class Board extends Component {
       console.log(response);
       turn = 1;
 
-      this.moves.push(response.x * 9 + response.y)
       this.update(response, -1, false);
     })
     // open the request with the verb and the url
-    this.moves.push(move);
     const moves_as_string = this.moves.join(',');
     //xhr.open('GET', `http://127.0.0.1:1234/moves/${moves_as_string}`);
-    xhr.open('GET', `https://vgomgu3y7ez6yv2eyt2x3idfmu0ptzmc.lambda-url.us-east-1.on.aws?moves=${moves_as_string}&depth=${this.props.depth}`);
+    const url = `https://vgomgu3y7ez6yv2eyt2x3idfmu0ptzmc.lambda-url.us-east-1.on.aws?moves=${moves_as_string}&depth=${this.props.depth}`
+    xhr.open('GET', url);
     // send the request
     xhr.send();
   }
@@ -124,8 +123,13 @@ class Board extends Component {
     recent_onedeaths = result[1];
     temp = result[0];
 
-    if (JSON.stringify(temp) === hash && !player){
-      alert("Pass")
+    if (JSON.stringify(temp) === hash){
+      if (!player){
+        alert("Pass")
+      }
+      this.moves.push(81);
+    } else {
+      this.moves.push(coords.x*9+coords.y)
     }
 
     this.setState(() => (
