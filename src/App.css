@@ -32,12 +32,12 @@
   width: 65px;
   height: 65px;
   position: relative;
-  background-image: url(./pngaaa.com-1751097.png);
+  background-image: url(./white_stone.png);
   background-size: cover;
 }
 
 .empty {
-  width: 75px;
+  width: 75px; 
   height: 75px;
   position: relative;
   background-image: url(./thin_plus.png);
