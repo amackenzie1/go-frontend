@@ -114,16 +114,19 @@ class Board extends Component {
   }
 
   update(coords, value, player){
+    const hash = JSON.stringify(this.state.board);
     var temp = this.state.board;
     if (coords.x*9 + coords.y < 81 && temp[coords.x][coords.y] === 0){
       temp[coords.x][coords.y] = value;
-    } else {
-      alert("Pass!");
     }
 
     var result = clean_board(temp, player ? 1 : -1);
     recent_onedeaths = result[1];
     temp = result[0];
+
+    if (JSON.stringify(temp) === hash && player === -1){
+      alert("Pass")
+    }
 
     this.setState(() => (
       {board: temp}
