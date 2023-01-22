@@ -173,12 +173,12 @@ function App() {
   xhr.send();
   const [depth, setDepth] = useState(5);
   return (
-    <div className="App" style={{fontFamily: 'fantasy', color: 'black'}}>
+    <div className="App" style={{fontFamily: 'Papyrus, fantasy', color: 'black', fontWeight: '600'}}>
       <Board depth={depth}/>
       <div style={{display: 'flex'}}>
         <div style={{flex: 1, padding: '10px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
           <h1 style={{flex: 1, textAlign: 'center', justifyContent: 'center'}}>
-            Andrew W. Mackenzie 
+            Andrew Mackenzie 
           </h1>
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
             <FontAwesomeIcon icon={faDiscord}/>
@@ -197,10 +197,9 @@ function App() {
               <div style={{padding: '5px'}}>
               </div>
             </div>
-            <div style={{paddingLeft: '20px', fontWeight: '500', flex: 4}}>
+            <div style={{paddingLeft: '20px', fontWeight: '600', flex: 4}}>
               <div>
-              I'm currently a master's student at McGill under <a href="https://cypaquette.github.io/" target="_blank">Courtney</a> 
-              and <a href="https://elliotpaquette.github.io/" target="_blank">Elliot Paquette</a>, graduating spring 2024. My research looks at the
+              I'm currently a master's student at McGill under <a href="https://cypaquette.github.io/" target="_blank">Courtney</a> and <a href="https://elliotpaquette.github.io/" target="_blank">Elliot Paquette</a>, graduating spring 2024. My research looks at the
               limiting behaviour of asynchronous gradient descent on quadratic problems.
               </div>
               <br/>
@@ -212,7 +211,7 @@ function App() {
             </div>
           </div>
           <h2>AlphaGo</h2>
-          <div style={{}}>
+          <div style={{fontWeight: '600'}}>
             On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
             good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
           </div>
