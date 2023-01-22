@@ -173,7 +173,7 @@ function App() {
   xhr.send();
   const [depth, setDepth] = useState(5);
   return (
-    <div className="App" style={{fontFamily: 'fantasy', color: 'white'}}>
+    <div className="App" style={{fontFamily: 'fantasy', color: 'black'}}>
       <Board depth={depth}/>
       <div style={{display: 'flex'}}>
         <div style={{flex: 1, padding: '10px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
@@ -212,7 +212,7 @@ function App() {
             </div>
           </div>
           <h2>AlphaGo</h2>
-          <div style={{color: 'white'}}>
+          <div style={{}}>
             On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
             good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
           </div>
