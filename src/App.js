@@ -206,7 +206,7 @@ function App() {
               <br/>
               <div>
               I will delightedly work on optimization (smooth or combinatorial), RL, generative models, or cryptography at any time of day or night. 
-              I can also be tempted by classical analysis, physics simulations, probability theory, or really any other crunchy math.
+              I can also be tempted by classical analysis, physics simulations, probability theory, or other sufficiently crunchy math.
               </div>
 
             </div>
@@ -214,7 +214,7 @@ function App() {
           <h2>AlphaGo</h2>
           <div style={{color: 'white'}}>
             On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
-            good: it can play superfically sane-looking Go using no search. The backend code is on <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">Github</a>. 
+            good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
           </div>
         </div>
         <div style={{flex: 1}}>
