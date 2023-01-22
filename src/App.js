@@ -199,7 +199,7 @@ function App() {
             </div>
             <div style={{paddingLeft: '20px', fontWeight: '500', flex: 4}}>
               <div>
-              I'm currently a master's student at McGill under Courtney and Elliot Paquette, graduating spring 2024. My current research explores the
+              I'm currently a master's student at McGill under Courtney and Elliot Paquette, graduating spring 2024. My research looks at the
               limiting behaviour of asynchronous gradient descent on quadratic problems.
               </div>
               <br/>
