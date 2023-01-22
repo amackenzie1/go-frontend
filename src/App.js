@@ -13,7 +13,7 @@ var board = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0],
-              [0, 0, 0, 0, 0, 0, 0, 0, 0],
+              [0, 0, 0, 0, 0, 0, -1, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
@@ -73,7 +73,7 @@ class Board extends Component {
     this.state = {board: board};
     this.setState = this.setState.bind(this);
     this.update = this.update.bind(this);
-    this.moves = [];
+    this.moves = [60];
   }
 
   getServerMove(move) {

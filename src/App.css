@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.piece{
+.piece2 {
   width: 65px;
   height: 65px;
   position: relative;
@@ -28,7 +28,7 @@
   background-size: cover;
 }
 
-.piece2 {
+.piece {
   width: 65px;
   height: 65px;
   position: relative;
@@ -45,7 +45,7 @@
 }
 
 .App {
-  background-image: url(./dandelion4.jpeg);
+  background-image: url(./dandelion4.jpg);
   background-size: cover;
   padding: 10px;
   height: 100vh;
@@ -56,5 +56,5 @@
   height: 150px;
   width: 150px;
   background-size: cover;
-  background-image: url('./me_cropped.jpeg')
+  background-image: url('./me_cropped.jpg')
 }
