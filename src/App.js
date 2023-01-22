@@ -205,7 +205,7 @@ function App() {
               <br/>
               <div>
               I will delightedly work on optimization (smooth or combinatorial), RL, generative models, or cryptography at any time of day or night. 
-              I can also be tempted by classical analysis, physics simulations, probability theory, or any other crunchy math.
+              I can also be tempted by classical analysis, physics simulations, probability theory, or really any other crunchy math.
               </div>
 
             </div>
