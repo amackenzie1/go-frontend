@@ -1,5 +1,5 @@
 import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMapMarker} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Component, useState } from 'react';
 import './App.css';
@@ -182,11 +182,11 @@ function App() {
           </h1>
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
             <FontAwesomeIcon icon={faDiscord}/>
-            <div style={{marginLeft: '10px', marginRight: '20px'}}>dandelion4#3240</div>
+            <div style={{marginLeft: '5px', marginRight: '20px'}}>dandelion4#3240</div>
             <FontAwesomeIcon icon={faGithub}/>
-            <div style={{marginLeft: '10px', marginRight: '20px'}}>amackenzie1</div>
+            <div style={{marginLeft: '5px', marginRight: '20px'}}>amackenzie1</div>
             <FontAwesomeIcon icon={faEnvelope}/>
-            <div style={{marginLeft: '10px'}}>andrew.mackenzie@mail.mcgill.ca</div>
+            <div style={{marginLeft: '5px'}}>andrew.mackenzie@mail.mcgill.ca</div>
           </div>
           <div style={{display: 'flex'}}>
             <h2>About me</h2>
