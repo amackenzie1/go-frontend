@@ -188,32 +188,42 @@ function App() {
             <FontAwesomeIcon icon={faEnvelope}/>
             <div style={{marginLeft: '5px'}}>andrew.mackenzie@mail.mcgill.ca</div>
           </div>
-          <div style={{display: 'flex'}}>
-            <h2>About me</h2>
-          </div>
-          <div style={{display: 'flex'}}>
+          
+          <div style={{display: 'flex', flexDirection: 'row'}}>
             <div>
-              <div className='myPicture' style={{flex: 1, borderRadius: '10px'}}/>
-              <div style={{padding: '5px'}}>
+              <div style={{display: 'flex'}}>
+                <h2>About me</h2>
+              </div>
+              <div style={{display: 'flex'}}>
+                <div>
+                  <div className='myPicture' style={{flex: 1, borderRadius: '10px'}}/>
+                  <div style={{padding: '5px'}}>
+                  </div>
+                </div>
+                <div style={{paddingLeft: '20px', fontWeight: '600', flex: 4}}>
+                  <div>
+                  I'm currently a master's student at McGill under <a href="https://cypaquette.github.io/" target="_blank">Courtney</a> and <a href="https://elliotpaquette.github.io/" target="_blank">Elliot Paquette</a>, graduating spring 2024. My research looks at the
+                  limiting behaviour of asynchronous gradient descent on quadratic problems.
+                  </div>
+                  <br/>
+                  <div>
+                  I will delightedly work on optimization (smooth or combinatorial), RL, generative models, or cryptography at any time of day or night. 
+                  I can also be tempted by classical analysis, physics simulations, probability theory, or other sufficiently crunchy math.
+                  </div>
+                </div>
+              </div>
+            <h2>AlphaGo</h2>
+            <div style={{fontWeight: '600'}}>
+              On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
+              good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
+            </div>
+            <h2>Text here</h2>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
+              <div style={{writingMode: 'vertical-rl', textOrientation: 'upright', padding: '10px'}}>
+              散るをいとふ 世にも人にも さきがけて 散るこそ花と 吹く小夜嵐
               </div>
             </div>
-            <div style={{paddingLeft: '20px', fontWeight: '600', flex: 4}}>
-              <div>
-              I'm currently a master's student at McGill under <a href="https://cypaquette.github.io/" target="_blank">Courtney</a> and <a href="https://elliotpaquette.github.io/" target="_blank">Elliot Paquette</a>, graduating spring 2024. My research looks at the
-              limiting behaviour of asynchronous gradient descent on quadratic problems.
-              </div>
-              <br/>
-              <div>
-              I will delightedly work on optimization (smooth or combinatorial), RL, generative models, or cryptography at any time of day or night. 
-              I can also be tempted by classical analysis, physics simulations, probability theory, or other sufficiently crunchy math.
-              </div>
-
-            </div>
-          </div>
-          <h2>AlphaGo</h2>
-          <div style={{fontWeight: '600'}}>
-            On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
-            good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
           </div>
         </div>
         <div style={{flex: 1}}>
