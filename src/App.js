@@ -217,7 +217,7 @@ function App() {
               On the right is a reimplementation of <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go" target="_blank">AlphaZero</a>. The heuristic function is unexpectedly
               good: it can play superfically sane-looking Go using no search. The backend code is <a href="https://github.com/amackenzie1/AlphaGo9.git" target="_blank">here</a>. 
             </div>
-            <h2>Text here</h2>
+            {/*<h2>Text here</h2>*/}
             </div>
             <div style={{display: 'flex', flexDirection: 'column'}}>
               <div style={{writingMode: 'vertical-rl', textOrientation: 'upright', padding: '10px'}}>
