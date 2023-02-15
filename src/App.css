@@ -9,8 +9,8 @@
   margin: 0 auto;
   display: grid;
   grid-gap: 0;
-  grid-template-columns: repeat(9, 75px);
-  grid-template-rows: repeat(9, 75px);
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
   grid-auto-flow: row;
 }
 
@@ -21,24 +21,24 @@
 }
 
 .piece{
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   position: relative;
   background-image: url(./clipart1952752.png);
   background-size: cover;
 }
 
 .piece2 {
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   position: relative;
   background-image: url(./white_stone.png);
   background-size: cover;
 }
 
 .empty {
-  width: 75px; 
-  height: 75px;
+  width: 60px; 
+  height: 60px;
   position: relative;
   background-image: url(./thin_plus.png);
   background-size: cover;

@@ -168,7 +168,7 @@ function App() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', `http://127.0.0.1:1234/refresh`);
   xhr.send();
-  const [depth, setDepth] = useState(5);
+  const [depth, setDepth] = useState(10);
   return (
     <div className="App">
       <Board depth={depth}/>
